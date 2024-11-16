@@ -1,0 +1,10 @@
+#
+a = float(input("Enter distance in m: "))
+b = float(input("Enter distance in m: "))
+c = float(input("Enter distance in m: "))
+d = int(a/1000)
+i = int(b/1000)
+f = int(c/1000)
+print("Ditance in km: ", d)
+print("Ditance in km: ", i)
+print("Ditance in km: ", f)
