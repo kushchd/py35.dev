@@ -1,10 +1,9 @@
 #
-a = 4
-b = 1
+a=7
+b=8
+print((a > 2) and (b >= 6)) 
 
-print("a == b = ", a ==b)
-print("a != b = ", a !=b)
-print('a > b =', a > b)
-print('a < b =', a < b)
-print('a >= b =', a >= b)
-print('a <= b =', a <= b)
+print(True and True)
+print(True and False)
+print(True or False)
+print(not True)  
