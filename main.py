@@ -44,4 +44,14 @@ hello = "Hello Word"
 for c in hello:
     print(c)
 
-    
+from random import randint
+r=randint(1,20)
+x=int(input("Угадай число от 1 до 20: "))
+while x!=r:
+    x=int(input("Попробуй еще раз: "))
+    if x<r:
+        print("Больше! ")
+    elif x>r:
+        print("Меньше! ")
+print("Угадал! ")
+
