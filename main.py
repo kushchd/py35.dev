@@ -44,14 +44,36 @@ hello = "Hello Word"
 for c in hello:
     print(c)
 
-from random import randint
-r=randint(1,20)
-x=int(input("Угадай число от 1 до 20: "))
-while x!=r:
-    x=int(input("Попробуй еще раз: "))
-    if x<r:
-        print("Больше! ")
-    elif x>r:
-        print("Меньше! ")
-print("Угадал! ")
+#from random import randint
+#r=randint(1,100)
+#x=int(input("Угадай число от 1 до 100: "))
+#while x!=r:
+ #   x=int(input("Попробуй еще раз: "))
+  #  if x<r:
+   #     print("Больше! ")
+    #elif x>r:
+     #   print("Меньше! ")
+#print("Угадал! ")
+
+import random
+
+def guess_the_number():
+    number_to_guess = random.randint(1, 100)
+
+    print("Відгадайте число від 1 до 100")
+
+    while True:
+        guess = int(input("Ваш здогад: "))
+        if guess < number_to_guess:
+            print("Загадане число більше.")
+        elif guess > number_to_guess:
+            print("Загадане число менше.") 
+        else: 
+            print(f"Вітаємо! Ви відгадали число {number_to_guess}.")
+            break
+
+guess_the_number()
+
+
+
 
