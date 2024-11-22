@@ -55,25 +55,5 @@ for c in hello:
      #   print("Меньше! ")
 #print("Угадал! ")
 
-import random
-
-def guess_the_number():
-    number_to_guess = random.randint(1, 100)
-
-    print("Відгадайте число від 1 до 100")
-
-    while True:
-        guess = int(input("Ваш здогад: "))
-        if guess < number_to_guess:
-            print("Загадане число більше.")
-        elif guess > number_to_guess:
-            print("Загадане число менше.") 
-        else: 
-            print(f"Вітаємо! Ви відгадали число {number_to_guess}.")
-            break
-
-guess_the_number()
-
-
-
-
+cities = ['San Francisco', 'New York', 'Washington DC']
+print('New York' not in cities) # True
