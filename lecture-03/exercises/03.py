@@ -1,6 +1,6 @@
 #
-def max_n(list, n):
-        x = sorted(list, reverse=True)
+def max_n(lst, n):
+        x = sorted(lst, reverse=True)
         return x[:n]
 
 result_1 = max_n([1, 2, 3], 1)

@@ -1,6 +1,6 @@
 #
-def min_n(list, n):
-        x = sorted(list)
+def min_n(lst, n):
+        x = sorted(lst)
         return x[:n]
 
 result_1 = min_n([1, 2, 3], 1)
