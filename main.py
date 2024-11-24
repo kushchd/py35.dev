@@ -56,4 +56,4 @@ for c in hello:
 #print("Угадал! ")
 
 cities = ['San Francisco', 'New York', 'Washington DC']
-print('New York' not in cities) # True
+print('New York' not in cities) 
