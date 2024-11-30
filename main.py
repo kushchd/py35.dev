@@ -57,3 +57,36 @@ for c in hello:
 
 cities = ['San Francisco', 'New York', 'Washington DC']
 print('New York' not in cities) 
+
+#####
+
+import sys
+
+def print_square(number):
+    print(number ** 2)
+
+def print_help():
+    print("usage: square.py number [-h]")
+    print()
+    print("positional arguments:")
+    print("  number         display a square of a given number")
+    print()
+    print("options:")
+    print("  -h | --help  show this help message and exit")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print_help()
+        sys.exit(1)
+        
+    arg = sys.argv[1]
+    if arg in ("-h", "--help"):
+        print_help()
+    else:
+        try:
+            number = float(arg)
+            print_square(number)
+        except ValueError:
+            print("Error: 'number' must be a valid number.")
+            print_help()
+
