@@ -1,5 +1,5 @@
-from operations import ops
-from menu import menu, calc_help
+from super_calc.operations import ops
+from super_calc.menu import menu, calc_help
 
 def extract(entry):
     for o in ops.keys():
