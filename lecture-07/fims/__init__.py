@@ -7,12 +7,7 @@ TITLE = "File Integrity Monitoring System"
 
 monitor = [
     {
-        'path':'/home/janus/projects/py.dev/monitoring',
-        'recursive':True
-    },
-    {
-        'path':'/home/janus/projects/py.dev/monitoring/no-recursive',
-        'recursive':False
+        'path':'C:\\Users\\kushc\\Desktop\\projects\\py35.dev\\lecture-07\\monitoring', 'recursive':True
     }
 ]
 
