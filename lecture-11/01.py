@@ -6,7 +6,6 @@ def delay(seconds):
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
-            print(f"Waiting for {seconds} seconds before calling {func.__name__}...")
             time.sleep(seconds)
             return func(*args, **kwargs)
         return wrapper
@@ -19,4 +18,5 @@ def it_may_be(name=''):
 # Приклад використання
 for t in range(12):
     print(it_may_be(name='Winnie-the-Pooh'))
+
 print("The program has completed.")
