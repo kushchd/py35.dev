@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}Реєстрація{% endblock %}
+{% block content %}
+    <h2 class="my-4">Реєстрація</h2>
+    <form action="" method="POST">
+        <div class="mb-3">
+            <label for="username" class="form-label">Ім'я користувача</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Електронна пошта</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Пароль</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Зареєструватися</button>
+    </form>
+{% endblock %}
