@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Roles</h1>
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Name</th>
@@ -23,6 +23,7 @@
                 {% endfor %}
             </tbody>
         </table>
+        <a href="{{ url_for('roles.create') }}" class="btn btn-primary mt-3">Create Role</a>
     </div>
 </body>
 </html>
