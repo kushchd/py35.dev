@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav a {
+            margin-right: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color:white;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Home Page!</h1>
+        <div class="nav">
+            <a href="{{ url_for('departments.list') }}">Список департаментів</a>
+            <a href="{{ url_for('roles.list') }}">Список ролей</a>
+            <a href="{{ url_for('departments.create') }}">Створити департамент</a>
+            <a href="{{ url_for('roles.create') }}">Створити роль</a>
+        </div>
+    </div>
+</body>
+</html>
