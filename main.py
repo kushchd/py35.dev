@@ -62,3 +62,9 @@ print('New York' not in cities)
 print(list(filter(lambda x: x % 2 == 0, range(100))))
 
 print(list(filter(lambda x: x > 50, range(100))))
+
+number = int(input("Введите число: "))
+if number % 2 == 0:
+	print("Число чётное")
+else:
+	print("Число нечётное")
